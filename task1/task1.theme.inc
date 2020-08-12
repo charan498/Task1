@@ -71,17 +71,17 @@ function template_preprocess_ParentSignup_Form(&$variables) {
 	$form = $variables['form'];
     $row2[] = array(
       array('data' =>  drupal_render($form['pfname'])),
-      array('data' =>  drupal_render($form['plname'])),
+      array('data' =>  drupal_render($form['plname'])), 
     );    
     $row2[] = array(
-      array('data' =>  drupal_render($form['email'])),
+      array('data' =>  drupal_render($form['email']),'colspan' => 6),
     );     
 	$row2[] = array(
       array('data' =>  drupal_render($form['password']),'colspan' => 6),
     );		
-	$row2[] = array(
+/* 	$row2[] = array(
       array('data' =>  drupal_render($form['account']),'colspan' => 6),
-    );		
+    );	 */	
 
 
 	$form['parentform'] = array(
@@ -90,6 +90,7 @@ function template_preprocess_ParentSignup_Form(&$variables) {
 		'#rows' => $row2,
 		'#weight' => -1000,
 	);
+	$variables['account'] = drupal_render($form['account']);
 	$variables['action_submit'] = drupal_render($form['buttons']['submit']);
 	$variables['action_cancel'] = drupal_render($form['buttons']['cancel']);
   $variables['form'] = $form;

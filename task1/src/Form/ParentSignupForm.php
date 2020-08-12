@@ -67,8 +67,7 @@ class ParentSignupForm extends FormBase {
 		$link = $this->l('	Take our assessment.',$assessment_url);
 		$form['account'] = array(		
 			'#markup' => t("<br><br>Don't have an account?".$link),
-		);
-        //$form['#theme'] = 'ParentSignupForm';
+		);	
 	return $form;
   }
    

@@ -79,6 +79,28 @@
                 alert("Only Numerical Values allowed");
 				this.value = this.value.replace(/[^0-9]/g, '');
             }
+	});
+	$("#pfirstname").keyup(function(){
+		//alert($('#lastname').val());
+		var val = $(this).val();
+		//alert(val);
+		if (val.match(/[^a-zA-Z]/g)) //you matched an invalid character
+		{
+			alert("First Name is invalid");
+			this.value = this.value.replace(/[^a-zA-Z]/g, '');			
+			return false;
+		}
+	});	
+	$("#plastname").keyup(function(){
+		//alert($('#lastname').val());
+		var val = $(this).val();
+		//alert(val);
+		if (val.match(/[^a-zA-Z]/g)) //you matched an invalid character
+		{
+			alert("First Name is invalid");
+			this.value = this.value.replace(/[^a-zA-Z]/g, '');			
+			return false;
+		}
 	});		
 })(jQuery);
 
