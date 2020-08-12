@@ -1,0 +1,8 @@
+formValidation:
+  css:
+    theme:
+      css/child.css: {}
+  js:
+    js/form_validation.js: {}
+  dependencies:
+    - core/jquery

@@ -1,0 +1,23 @@
+task1.List:
+  path: '/forms'
+  defaults:
+    _form: '\Drupal\task1\Form\links'
+    _title: 'Forms'
+  requirements:
+    _permission: 'form links'
+    
+task1.parent:
+  path: '/parentform'
+  defaults:
+    _form: '\Drupal\task1\Form\ParentSignupForm'
+    _title: 'PARENT SIGN UP'
+  requirements:
+    _permission: 'form links'
+    
+task1.child:
+  path: '/childform'
+  defaults:
+    _form: '\Drupal\task1\Form\ChildDetailsForm'
+    _title: 'CHILD DETAILS'
+  requirements:
+    _permission: 'form links'

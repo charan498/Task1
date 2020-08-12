@@ -1,0 +1,13 @@
+table tr td{
+	background: white !important;
+}
+.page-title, label{
+	color: #0d0d68 !important;
+}
+.button{
+	border-radius: 0em !important;
+	background-color: #4CAF50 !important; /* Green */
+	border: none !important;
+	color: white !important;
+	background-image: linear-gradient(to bottom,#0d0d68 ,#0d0d68 ) !important;
+}

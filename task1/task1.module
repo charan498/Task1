@@ -1,0 +1,19 @@
+<?php
+
+
+/**
+ * Implements hook_theme().
+ */
+function task1_theme() {
+ 
+    return array(
+		'ChildDetails_Form' => array(
+			'render element' => 'form',
+			'file' => 'task1.theme.inc',
+		),
+		'ParentSignup_Form' => array(
+			'render element' => 'form',
+			'file' => 'task1.theme.inc',
+		),
+	);
+}		

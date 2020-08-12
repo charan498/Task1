@@ -1,0 +1,6 @@
+task1_list:
+  title: 'Task1'
+  route_name: task1.List
+  parent: system/main
+  weight: 1
+
